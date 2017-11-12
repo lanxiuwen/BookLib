@@ -22,7 +22,7 @@ public:
 	void WriteData(char * file_loc = "book.txt");
 	//void DeleteData(int iCount);
 	void GetBookFromFile(char * file_loc="book.txt");
-
+	//
 protected:
 	string _name;
 	string _lsbn;
