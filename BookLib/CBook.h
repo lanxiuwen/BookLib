@@ -1,3 +1,6 @@
+
+#pragma once
+
 #define NUM1 128
 #define NUM2 50
 #include<string>
@@ -11,18 +14,16 @@ public:
 	CBook(string Name, string lsbn, string Price, string Author);
 	~CBook() {}
 
-	string GetName();
+	string GetName() const;
 	void SetName(string &Name);
-	string GetLsbn();
+	string GetLsbn() const;
 	void SetLsbn(string &lsbn);
-	string GetPrice();
+	string GetPrice() const;
 	void SetPrice(string &price);
-	string GetAuthor();
+	string GetAuthor() const;
 	void SetAuthor(string &Author);
-	void WriteData(char * file_loc = "book.txt");
-	//void DeleteData(int iCount);
-	void GetBookFromFile(char * file_loc="book.txt");
-	//
+
+
 protected:
 	string _name;
 	string _lsbn;
@@ -30,3 +31,4 @@ protected:
 	string _author;
 
 };
+
