@@ -1,8 +1,6 @@
 
 #pragma once
 
-#define NUM1 128
-#define NUM2 50
 #include<string>
 
 using namespace std;
